@@ -3,11 +3,11 @@
 .DATA
 .CODE
 MAIN PROC
-   
-    ; MOV AH , 2h 
+    
     ; Instruction Destination, Data/Source
+    ; MOV AH , 2h
     ; HERE, MOV is an instruction
-    ; AH is a resister
+    ; AH is a resister[AH is the destination]
     ; 2h --> 00000010h is a data
     ; 2h represents the data as hexadecimal
     
