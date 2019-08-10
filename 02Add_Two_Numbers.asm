@@ -15,7 +15,9 @@ MAIN PROC
     MOV AL,3h ; 3h data will be stored in AL resister
     ADD AH,AL ; AH = AH + AL [Add two numbers]
     
-    MOV AH,4CH
-    INT 21H
+    
+    ; This 2 lines are used for terminating our code
+    MOV AH,4CH ; End programme
+    INT 21H    ; Interrupt 21h is called to output the string
     MAIN ENDP
 END MAIN
