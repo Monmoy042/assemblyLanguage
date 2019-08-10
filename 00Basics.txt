@@ -36,7 +36,8 @@ In Data segment, all the variables are declared or initialized
 
 Example
 --------
-
+.DATA 
+msg DB "Hello World!"
 
 Reference
 ----------
