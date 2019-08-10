@@ -1,0 +1,44 @@
+=====================================================================================================================
+.MODEL
+-------
+The memory model specifies the memory size assigned to each of the different parts or segments of a program. There exist different memory models for the 8086 MPU
+
+The memory model directive specifies the size of the memory the program needs. Based on this directive, the assembler assigns the required amount of memory to data and code.
+
+Each one of the segments (stack, data and code), in a program, is called a logical segment . Depending on the model used, segments may be in one or in different physical segments.
+
+MODEL directive
+-----------------
+    1. TINY
+    2. SMALL
+    3. COMPACT # one code and more than one data segment
+    4. MEDIUM # more than one code and one data segment
+    5. LARGE  # more than one code and data segment (Array not greater than 64k bytes)
+    6. HUGE # more than one code and data segment (Array can be greater than 64k bytes)
+
+Example
+--------
+.MODEL SMALL
+======================================================================================================================
+
+.STACK
+-------
+In Stack segment, we set aside a block of memory to store stack. Its size is considered in kb. In the above example, we have given the size of 100h which means 1kb.
+
+Example 
+--------
+.STACK 100H
+======================================================================================================================
+
+.DATA
+------
+In Data segment, all the variables are declared or initialized
+
+Example
+--------
+
+
+Reference
+----------
+    1. https://faculty.kfupm.edu.sa/COE/aimane/assembly/pagegen-39.aspx.htm
+    2. https://www.assemblylanguagetuts.com/x86-assembly-language-syntax/
