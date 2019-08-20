@@ -1,0 +1,18 @@
+ \\\\\\\\\\\\/////////////////
+ Variable in Assembly Language
+ \\\\\\\\\\\\/////////////////
+
+    Variable Declaration Method
+     ---------------------------
+     variableName Directive Initializer
+     name DB 49
+    
+     Directives of Assembly Language
+     ------------------------------- 
+     Directive     Meaning                 Size
+     =======================================================
+     DB            Define Byte             1 Byte(8 bits)
+     DW            Define Word             2 Bytes(16 bits)
+     DD            Define Double Word      4 Bytes(32 bits)
+     DQ            Define QuadWord         8 Bytes(64 bits)
+     DT            Define TenBytes         10 Bytes(80 bits)
